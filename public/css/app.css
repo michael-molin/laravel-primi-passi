@@ -4,8 +4,27 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: 30px;
+  color: #417c9e;
+  margin-left: 15px;
+}
+
 header {
   text-align: center;
+}
+
+header #logo {
+  display: inline-block;
 }
 
 header ul {
@@ -14,6 +33,27 @@ header ul {
 
 header ul li {
   display: inline-block;
+  padding: 5px 2px 2px 2px;
+  margin-right: 10px;
+}
+
+header ul li:visited {
+  background-color: #b6dbe4;
+}
+
+header #hamburger {
+  display: none;
+  width: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  header .nav-menu {
+    display: none;
+  }
+
+  header #hamburger {
+    display: inline-block;
+  }
 }
 
 main .cards {
@@ -24,29 +64,49 @@ main .cards {
 }
 
 main .card {
-  width: 400px;
+  width: calc(100% / 3 - 30px);
   height: auto;
   position: relative;
   margin: 15px;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 main .card img {
   width: 100%;
+  transition: 0.3s;
 }
 
 main .card .card-hover {
+  display: none;
   position: absolute;
   top: 0%;
   left: 0%;
   right: 0;
   bottom: 0;
-  display: none;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+main .card:hover img {
+  transform: scale(1.1);
 }
 
 main .card:hover .card-hover {
   display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  main .card {
+    width: calc(100% /2 - 30px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main .card {
+    width: calc(100% - 30px);
+  }
 }
 

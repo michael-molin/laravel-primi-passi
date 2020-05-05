@@ -1,58 +1,7 @@
-* {
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    text-align: center;
-
-    ul {
-        text-decoration: none;
-
-        li {
-            display: inline-block;
-        }
-    }
-}
-
-main {
-
-    .cards {
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        width: 400px;
-        height: auto;
-        position: relative;
-        margin: 15px;
-
-        img {
-            width: 100%;
-        }
-
-        .card-hover {
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            right: 0;
-            bottom: 0;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-    }
-
-    .card:hover {
-
-        .card-hover {
-            display: flex;
-        }
-    }
-
-}
+@import 'partials/_reset.scss';
+@import 'partials/_variables.scss';
+@import 'partials/_common.scss';
+@import 'partials/_mixin.scss';
+@import 'partials/_header.scss';
+@import 'partials/_main.scss';
+@import 'partials/_footer.scss';

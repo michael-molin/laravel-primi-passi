@@ -137,14 +137,9 @@ foreach ($data as $key => $value) {
         case 'cortissima':
             $cortissima[$key] = $value;
             break;
-        default:
-
-            break;
     }
 }
 
-$variabileHtml = '<p>Link</p>';
-$urlMolisana = asset('img/marchio-sito-test.png');
 $urlCss = asset('css/app.css');
 @endphp
 
@@ -152,25 +147,18 @@ $urlCss = asset('css/app.css');
 
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <title>Molisana-test</title>
         <link rel="stylesheet" href="{{$urlCss}}">
     </head>
-
     <body>
-        <header>
-            <img id="logo" src="{{$urlMolisana}}" alt="Logo Pasta Molisana">
-            <ul class="nav-menu">
-                <li>{!! $variabileHtml !!}</li>
-                <li>{!! $variabileHtml !!}</li>
-                <li>{!! $variabileHtml !!}</li>
-            </ul>
-        </header>
-
+        @include ('partials.header')
         <main>
+            <section>
             <h2>Le Lunghe</h2>
+            <br>
             <div class="cards">
                 @foreach ($lunga as $key => $value)
                     <div class="card">
@@ -185,7 +173,8 @@ $urlCss = asset('css/app.css');
                     </div>
                 @endforeach
             </div>
-
+        </section>
+            <section>
             <h2>Le Corte</h2>
             <div class="cards">
                 @foreach ($corta as $key => $value)
@@ -201,7 +190,8 @@ $urlCss = asset('css/app.css');
                     </div>
                 @endforeach
             </div>
-
+        </section>
+            <section>
             <h2>Le cortissime</h2>
             <div class="cards">
                 @foreach ($cortissima as $key => $value)
@@ -217,6 +207,8 @@ $urlCss = asset('css/app.css');
                     </div>
                 @endforeach
             </div>
+        </section>
         </main>
+        @include ('partials.footer')
     </body>
 </html>

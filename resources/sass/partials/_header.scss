@@ -1,0 +1,36 @@
+header {
+    text-align: center;
+
+    #logo {
+        display: inline-block;
+    }
+
+    ul {
+        text-decoration: none;
+
+        li {
+            display: inline-block;
+            padding: 5px 2px 2px 2px;
+            margin-right: 10px;
+        }
+
+        li:visited {
+            background-color: #b6dbe4;
+        }
+    }
+
+    #hamburger {
+        display: none;
+        width: 50px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .nav-menu {
+            display: none;
+        }
+
+        #hamburger {
+            display: inline-block;
+        }
+    }
+}

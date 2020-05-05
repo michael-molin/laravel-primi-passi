@@ -1,0 +1,59 @@
+main {
+
+    .cards {
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(100% / 3 - 30px);
+        height: auto;
+        position: relative;
+        margin: 15px;
+        overflow: hidden;
+        transition: 0.3s;
+
+        img {
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .card-hover {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            right: 0;
+            bottom: 0;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.3s;
+        }
+    }
+
+    .card:hover {
+
+        img {
+            transform: scale(1.1);
+        }
+
+        .card-hover {
+            display: flex;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .card {
+            width: calc(100% /2 - 30px);
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .card {
+            width: calc(100% - 30px);
+        }
+    }
+
+}
