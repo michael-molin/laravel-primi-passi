@@ -1,9 +1,9 @@
 <header>
     <img id="logo" src="{{asset('img/marchio-sito-test.png')}}" alt="Logo Pasta Molisana">
     <ul class="nav-menu">
-        <li><a href="#">{!! '<h4>Home</h4>' !!}</a></li>
-        <li><a href="#">{!! '<h4>Prodotti</h4>' !!}</a></li>
-        <li><a href="#">{!! '<h4>News</h4>' !!}</a></li>
+        <li><a href="#">{!! '<h3>Home</h3>' !!}</a></li>
+        <li><a href="#">{!! '<h3>Prodotti</h3>' !!}</a></li>
+        <li><a href="#">{!! '<h3>News</h3>' !!}</a></li>
     </ul>
     <br>
     <img id="hamburger" src="{{asset('img/hambuger.svg')}}" alt="">

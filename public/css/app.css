@@ -19,6 +19,11 @@ h2 {
   margin-left: 15px;
 }
 
+h4 {
+  font-size: 20px;
+  color: #417c9e;
+}
+
 header {
   text-align: center;
 }
@@ -27,14 +32,11 @@ header #logo {
   display: inline-block;
 }
 
-header ul {
-  text-decoration: none;
-}
-
 header ul li {
   display: inline-block;
   padding: 5px 2px 2px 2px;
   margin-right: 10px;
+  color: black;
 }
 
 header ul li:visited {
@@ -106,6 +108,36 @@ main .card:hover .card-hover {
 
 @media only screen and (max-width: 500px) {
   main .card {
+    width: calc(100% - 30px);
+  }
+}
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer .div-footer {
+  margin: 15px;
+  width: calc(100% / 3 - 30px);
+}
+
+footer ul li {
+  list-style: none;
+  font-size: 20px;
+  color: #417c9e;
+  padding: 3px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .div-footer {
+    width: calc(100% /2 - 30px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .div-footer {
     width: calc(100% - 30px);
   }
 }

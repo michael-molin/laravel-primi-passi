@@ -1,0 +1,32 @@
+footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+
+    .div-footer {
+        margin: 15px;
+        width: calc(100% / 3 - 30px);
+    }
+
+
+    ul {
+        li {
+            list-style: none;
+            font-size: 20px;
+            color: #417c9e;
+            padding: 3px 0;
+        }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        .div-footer {
+            width: calc(100% /2 - 30px);
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .div-footer {
+            width: calc(100% - 30px);
+        }
+    }
+}
