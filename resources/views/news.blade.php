@@ -1,7 +1,7 @@
 @extends('layouts.user')
 @section ('titolo')
-    Home
+    News
 @endsection
 @section ('main')
-    Home!
+    News!
 @endsection
