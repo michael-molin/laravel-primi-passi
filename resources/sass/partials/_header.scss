@@ -13,14 +13,16 @@ header {
             color: black;
         }
 
-        li:visited {
-            background-color: #b6dbe4;
-        }
+    }
+
+    .active {
+        background-color: #b6dbe4;
     }
 
     #hamburger {
         display: none;
         width: 50px;
+        color: #b6dbe4;
     }
 
     @media only screen and (max-width: 768px) {

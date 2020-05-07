@@ -39,13 +39,14 @@ header ul li {
   color: black;
 }
 
-header ul li:visited {
+header .active {
   background-color: #b6dbe4;
 }
 
 header #hamburger {
   display: none;
   width: 50px;
+  color: #b6dbe4;
 }
 
 @media only screen and (max-width: 768px) {
@@ -116,6 +117,7 @@ footer {
   margin-top: 30px;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 footer .div-footer {
