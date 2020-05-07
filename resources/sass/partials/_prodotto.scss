@@ -1,8 +1,10 @@
 .prodotto-fullwidth {
-        color: #002d75;
-        background-color: #b8dae4;
-
-        padding: 20px 0;
+    color: #002d75;
+    background-color: #b8dae4;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
 
     .prodotto {
         width: 80%;
@@ -22,5 +24,15 @@
             margin-top:20px;
             font-size: 20px;
         }
+
+
+        }
     }
+
+    .freccia {
+        margin: 0 15px;
+
+        .fa , .fas {
+            font-size: 50px;
+        }
 }
