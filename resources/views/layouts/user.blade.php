@@ -11,7 +11,6 @@
         <main>
             @yield('main')
         </main>
-
         @include ('partials.footer')
         @yield('script')
     </body>
