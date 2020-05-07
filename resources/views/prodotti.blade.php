@@ -43,8 +43,6 @@
                 </div>
             @endforeach
         </div>
-        </section>
-        <section>
         <h2>Le Corte</h2>
         <div class="cards">
             @foreach ($corta as $key => $value)
@@ -60,8 +58,6 @@
                 </div>
             @endforeach
         </div>
-    </section>
-        <section>
         <h2>Le cortissime</h2>
         <div class="cards">
             @foreach ($cortissima as $key => $value)

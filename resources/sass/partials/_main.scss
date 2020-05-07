@@ -1,5 +1,9 @@
 main {
 
+    section {
+        background-image: url('/../../img/sfondo.jpg');
+    }
+
     .cards {
         display: flex;
         justify-content:flex-start;

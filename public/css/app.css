@@ -59,6 +59,10 @@ header #hamburger {
   }
 }
 
+main section {
+  background-image: url("/../../img/sfondo.jpg");
+}
+
 main .cards {
   display: flex;
   justify-content: flex-start;
@@ -118,6 +122,9 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  background-image: url("/../../img/sfondo-footer.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 footer .div-footer {

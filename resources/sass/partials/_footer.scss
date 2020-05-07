@@ -3,6 +3,9 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    background-image: url('/../../img/sfondo-footer.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
 
     .div-footer {
         margin: 15px;
