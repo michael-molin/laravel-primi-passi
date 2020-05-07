@@ -1,0 +1,26 @@
+.prodotto-fullwidth {
+        color: #002d75;
+        background-color: #b8dae4;
+
+        padding: 20px 0;
+
+    .prodotto {
+        width: 80%;
+        margin: 0 auto;
+
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        p {
+            margin-top:20px;
+            font-size: 20px;
+        }
+    }
+}

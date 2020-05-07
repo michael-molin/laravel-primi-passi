@@ -47,6 +47,7 @@ header #hamburger {
   display: none;
   width: 50px;
   color: #b6dbe4;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -85,12 +86,12 @@ main .card img {
 }
 
 main .card .card-hover {
+  text-align: center;
   display: none;
   position: absolute;
-  top: 0%;
-  left: 0%;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -149,5 +150,30 @@ footer ul li {
   footer .div-footer {
     width: calc(100% - 30px);
   }
+}
+
+.prodotto-fullwidth {
+  color: #002d75;
+  background-color: #b8dae4;
+  padding: 20px 0;
+}
+
+.prodotto-fullwidth .prodotto {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.prodotto-fullwidth .prodotto img {
+  width: 100%;
+}
+
+.prodotto-fullwidth .prodotto h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.prodotto-fullwidth .prodotto p {
+  margin-top: 20px;
+  font-size: 20px;
 }
 

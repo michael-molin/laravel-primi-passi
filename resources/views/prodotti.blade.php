@@ -17,6 +17,7 @@
                 break;
         }
     }
+
 @endphp
 
 
@@ -28,11 +29,10 @@
     <main>
         <section>
         <h2>Le Lunghe</h2>
-        <br>
         <div class="cards">
             @foreach ($lunga as $key => $value)
                 <div class="card">
-                    <img src="{{$value['src']}}" alt="">
+                    <a href="{{route('prodotti.show' , $key)}}"><img src="{{$value['src']}}" alt=""></a>
                     <div class="card-hover">
                         <h4>{{$value['titolo']}}</h4>
                         <svg class="mk-svg-icon" data-name="mk-li-food" data-cacheid="icon-5eabe39c707e5" style=" height:32px; width: 32px; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -47,7 +47,7 @@
         <div class="cards">
             @foreach ($corta as $key => $value)
                 <div class="card">
-                    <img src="{{$value['src']}}" alt="">
+                    <a href="{{route('prodotti.show' , $key)}}"><img src="{{$value['src']}}" alt=""></a>
                     <div class="card-hover">
                         <h4>{{$value['titolo']}}</h4>
                         <svg class="mk-svg-icon" data-name="mk-li-food" data-cacheid="icon-5eabe39c707e5" style=" height:32px; width: 32px; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -62,7 +62,7 @@
         <div class="cards">
             @foreach ($cortissima as $key => $value)
                 <div class="card">
-                    <img src="{{$value['src']}}" alt="">
+                    <a href="{{route('prodotti.show' , $key)}}"><img src="{{$value['src']}}" alt=""></a>
                     <div class="card-hover">
                         <h4>{{$value['titolo']}}</h4>
                         <svg class="mk-svg-icon" data-name="mk-li-food" data-cacheid="icon-5eabe39c707e5" style=" height:32px; width: 32px; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
