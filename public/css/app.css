@@ -1,5 +1,5 @@
 * {
-  border: 0px;
+  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #002d75;
 }
 
 h2 {
@@ -38,19 +38,24 @@ header #logo {
 
 header ul li {
   display: inline-block;
-  padding: 5px 2px 2px 2px;
-  margin-right: 10px;
-  color: black;
+  padding: 5px;
+  margin-right: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  color: #002d75;
 }
 
 header .active {
-  background-color: #b6dbe4;
+  background-color: #417c9e;
 }
 
 header #hamburger {
   display: none;
   width: 50px;
-  color: #b6dbe4;
+  color: #002d75;
   margin-top: 10px;
 }
 
