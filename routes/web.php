@@ -17,9 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/' , function () {
-    return view('home');
-}) -> name('home');
+Route::get('/' , 'ProductController@index') -> name('home');
 
 Route::get('/prodotti' , function () {
     return view('prodotti');
